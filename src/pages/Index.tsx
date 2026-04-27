@@ -4,11 +4,11 @@ import {
   Phone, MapPin, Clock, Star, Zap, Cigarette, Droplets, Candy, Flame, Wrench,
   CircleDot, ShieldCheck, Sparkles, Users, ParkingCircle, Wallet, CalendarDays, Facebook, Instagram
 } from "lucide-react";
-import heroShop from "@/assets/hero-shop.jpg";
-import galleryVapes from "@/assets/gallery-vapes.jpg";
-import galleryGlass from "@/assets/gallery-glass.jpg";
-import galleryTobacco from "@/assets/gallery-tobacco.jpg";
-import galleryInterior from "@/assets/gallery-interior.jpg";
+import galleryTobacco from "@/assets/altavista-tobacco.jpg";
+import galleryVapes from "@/assets/altavista-vapes.jpg";
+import galleryBongs from "@/assets/altavista-bongs.jpg";
+import galleryCigarettes from "@/assets/altavista-cigerettes.jpg";
+import galleryIncense from "@/assets/altavista-incense.jpg";
 
 const products = [
   { icon: Zap, title: "Disposable Vapes", desc: "Newest flavors and the most popular brands restocked weekly.", ideal: "Vapers who want grab‑and‑go", benefit: "Lowest prices in town", color: "cyan" },
@@ -30,11 +30,9 @@ const reasons = [
 ];
 
 const testimonials = [
-  { quote: "Best prices in Altavista, hands down. I always find what I'm looking for and the staff actually knows their stuff.", name: "Marcus R.", tag: "Regular customer" },
-  { quote: "Huge selection of disposables and juice flavors. Clean store, organized shelves, and they're always quick at the counter.", name: "Jasmine T.", tag: "Vape enthusiast" },
-  { quote: "I drive past two other shops to come here. The crew is friendly and they actually carry the cigars I want.", name: "Doug H.", tag: "Cigar buyer" },
-  { quote: "Open late, easy parking, and they've got everything from glass to gummies. My go‑to spot in town.", name: "Ashley M.", tag: "Local" },
-  { quote: "Walked in not knowing what I needed and walked out with exactly the right setup. Solid customer service.", name: "Tyler B.", tag: "First‑time buyer" },
+  { quote: "Stopped by to check it out and it had everything you need to vape, smoke, prepare, prep! Things to smoke in paper, glass, rolled or hookah form.", name: "Dana T.", tag: "Google Review" },
+  { quote: "Love shopping there. The employee's there are so nice and kind always greet you when you walk in the door. The store is always neat and clean and the employee's are always smiling.", name: "Roxanne Dalton", tag: "Google Review" },
+  { quote: "The owner and his Employees are great people n he is under priced compared to other places.", name: "Doug Penn", tag: "Google Review" },
 ];
 
 const Index = () => {
@@ -107,8 +105,8 @@ const Index = () => {
             <div className="absolute -inset-4 bg-gradient-neon opacity-30 blur-3xl rounded-full" />
             <div className="relative metallic-border rounded-md overflow-hidden shadow-card-dark">
               <img
-                src={heroShop}
-                alt="Vape devices, glassware, and tobacco products at Altavista Tobacco & Vape"
+                src={galleryVapes}
+                alt="Vape devices at Altavista Tobacco & Vape"
                 width={1600}
                 height={1024}
                 className="w-full h-auto rounded-md"
@@ -230,16 +228,19 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-4">
             <div className="md:row-span-2 md:col-span-2 metallic-border rounded-md overflow-hidden">
-              <img src={galleryInterior} alt="Interior of Altavista Tobacco & Vape store" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover hover:scale-105 transition-smooth duration-700" />
+              <img src={galleryTobacco} alt="Tobacco products at Altavista Tobacco & Vape" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover hover:scale-105 transition-smooth duration-700" />
             </div>
             <div className="metallic-border rounded-md overflow-hidden">
-              <img src={galleryVapes} alt="Disposable vape display wall" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover hover:scale-105 transition-smooth duration-700" />
+              <img src={galleryVapes} alt="Disposable vape display" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover hover:scale-105 transition-smooth duration-700" />
             </div>
             <div className="metallic-border rounded-md overflow-hidden">
-              <img src={galleryGlass} alt="Glassware bongs and pipes" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover hover:scale-105 transition-smooth duration-700" />
+              <img src={galleryBongs} alt="Glassware bongs and pipes" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover hover:scale-105 transition-smooth duration-700" />
             </div>
-            <div className="md:col-span-3 metallic-border rounded-md overflow-hidden">
-              <img src={galleryTobacco} alt="Tobacco and cigar shelves" loading="lazy" width={1024} height={1024} className="w-full h-72 md:h-96 object-cover hover:scale-105 transition-smooth duration-700" />
+            <div className="md:col-span-2 metallic-border rounded-md overflow-hidden">
+              <img src={galleryCigarettes} alt="Cigarettes and tobacco products" loading="lazy" width={1024} height={1024} className="w-full h-72 md:h-80 object-cover hover:scale-105 transition-smooth duration-700" />
+            </div>
+            <div className="metallic-border rounded-md overflow-hidden">
+              <img src={galleryIncense} alt="Incense and accessories" loading="lazy" width={1024} height={1024} className="w-full h-72 md:h-80 object-cover hover:scale-105 transition-smooth duration-700" />
             </div>
           </div>
         </div>
